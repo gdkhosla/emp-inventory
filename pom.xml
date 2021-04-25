@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+        <packaging>pom</packaging>	
+	<groupId>com.interview</groupId>
+	<artifactId>empinventory</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>empinventory</name>
+	<description>Interview project for employee inventory</description>
+	
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<modules>
+        <module>emp-inventory-controller</module>
+        <module>emp-inventory-rest-models</module>
+        <module>emp-inventory-service</module>
+        <module>emp-inventory-service-model</module>
+        <module>emp-inventory-dal</module>
+        <module>emp-inventory-entity</module>
+        <module>emp-inventory-util</module>
+        <module>emp-inventory-commons</module>
+        <module>emp-inventory-external-clients</module>
+        <module>emp-inventory-app</module>
+    </modules>
+    
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.4</version>
+		</dependency>
+        
+	</dependencies>
+
+
+</project>
